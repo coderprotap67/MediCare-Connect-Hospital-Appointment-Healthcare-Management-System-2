@@ -11,7 +11,7 @@ This is the dedicated backend server for **MediCare Connect**, powering secure a
 
 ## 🔗 Project Links & Live Base API
 
-- **🌐 Live API Base URL:** `https://your-backend-api.onrender.com`
+- **🌐 Live API Base URL:** https://healthcare-management-system-iota-one.vercel.app
 - **💻 Client Repository:** [MediCare Connect Client Repo](https://github.com/your-username/medicare-connect-client)
 - **🖥️ Server Repository:** [MediCare Connect Server Repo](https://github.com/your-username/medicare-connect-server)
 
@@ -72,16 +72,3 @@ The backend connects to MongoDB database `medicareDB` with **6 core collections*
 ### 💳 Stripe Payments (`/api/payments`)
 - `POST /api/payments/create-payment-intent` – Generate Stripe payment client secret
 - `POST /api/payments/records` – Record payment logs and mark appointment as `paid`
-
----
-
-## 🔑 Environment Variables Setup
-
-Create a `.env` file in the root directory:
-
-```env
-PORT=5000
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/medicareDB?retryWrites=true&w=majority
-JWT_SECRET=your_super_secret_jwt_key
-STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
-CLIENT_URL=[https://healthcare-management-taupe.vercel.app](https://healthcare-management-taupe.vercel.app)
