@@ -12,8 +12,8 @@ This is the dedicated backend server for **MediCare Connect**, powering secure a
 ## 🔗 Project Links & Live Base API
 
 - **🌐 Live API Base URL:** https://healthcare-management-system-iota-one.vercel.app
-- **💻 Client Repository:** [MediCare Connect Client Repo](https://github.com/your-username/medicare-connect-client)
-- **🖥️ Server Repository:** [MediCare Connect Server Repo](https://github.com/your-username/medicare-connect-server)
+- **💻 Client Repository:** [MediCare Connect Client Repo](https://github.com/coderprotap67/MediCare-Connect-Hospital-Appointment-Healthcare-Management-System-1.git)
+- **🖥️ Server Repository:** [MediCare Connect Server Repo](https://github.com/coderprotap67/MediCare-Connect-Hospital-Appointment-Healthcare-Management-System-2.git)
 
 ---
 
