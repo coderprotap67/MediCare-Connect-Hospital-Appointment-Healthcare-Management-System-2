@@ -263,30 +263,7 @@ async function run() {
           createdAt: new Date(),
           status: 'active'
         });
-   
-      } catch (err) {
-        res.status(500).send({ message: err.message 
-      }
-    });
-
-    app.put('/api/users/profile', verifyUser, async (req, res) => {
-      try {
-        const email = req.user.email;
-        const { displayName, name, phone, address, photoURL, photo } = req.body;
-
-        const updatedData = {
-          name: displayName || name || req.user.name,
-          phone: phone !== undefined ? phone : req.user.phone,
-          address: address !== undefined ? address : req.user.address,
-          photo: photoURL || photo || req.user.photo,
-          updatedAt: new Date()
-        };
-        const result = await usersCollection.updateOne(
-          { email },
-          { $set: updatedData }
-        );
-
-        res.send({ status: true, message: 'Profile updated successfully', result });
+        res.send(result);
       } catch (err) {
         res.status(500).send({ message: err.message });
       }
