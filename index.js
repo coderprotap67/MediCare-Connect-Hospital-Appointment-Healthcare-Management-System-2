@@ -263,9 +263,9 @@ async function run() {
           createdAt: new Date(),
           status: 'active'
         });
-        res.send(result);
+   
       } catch (err) {
-        res.status(500).send({ message: err.message });
+        res.status(500).send({ message: err.message 
       }
     });
 
