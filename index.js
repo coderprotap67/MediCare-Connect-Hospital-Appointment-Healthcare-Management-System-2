@@ -336,9 +336,7 @@ async function run() {
         review.patientEmail = req.user.email;
         review.createdAt = new Date();
         const result = await reviewsCollection.insertOne(review);
-        res.send(result);
-      } catch (err) {
-        res.status(500).send({ message: err.message });
+
       }
     });
 
